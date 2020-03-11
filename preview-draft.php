@@ -14,7 +14,7 @@ class preview_draft{
 		add_action('init',[$this, 'rewrite_rule']);
 
 		#register filter preview_post_link
-		add_filter('init',[$this, 'filter_preview_post_link']);
+		add_filter('preview_post_link',[$this, 'filter_preview_post_link']);
 	}
     
 	function filter_preview_post_link($link)
